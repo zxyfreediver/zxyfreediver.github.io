@@ -40,7 +40,10 @@ export default function Home() {
         <nav className="relative max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-4">
           <div className="flex justify-between items-center">
             <h1 className="text-2xl font-bold text-gray-900">我的个人网站</h1>
-            <div className="flex space-x-4">
+            <div className="flex space-x-4 items-center">
+              <a href="/resume" className="text-gray-600 hover:text-gray-900 transition-colors">
+                简历
+              </a>
               <a href="mailto:your.email@example.com" className="text-gray-600 hover:text-gray-900 transition-colors">
                 <FaEnvelope className="w-6 h-6" />
               </a>
