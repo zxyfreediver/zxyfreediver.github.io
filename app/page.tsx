@@ -7,10 +7,10 @@ import { useEffect, useRef } from 'react';
 
 export default function Home() {
   const hobbies = [
-    { name: "摄影", image: "/hobby1.jpg" },
-    { name: "旅行", image: "/hobby2.jpg" },
-    { name: "阅读", image: "/hobby3.jpg" },
-    { name: "烹饪", image: "/hobby4.jpg" },
+    { name: "摄影", image: "/hobby1.jpg", description: "通过镜头捕捉世界的美好瞬间，记录生活的精彩。" },
+    { name: "旅行", image: "/hobby2.jpg", description: "探索未知的地方，体验不同的文化，拓展视野。" },
+    { name: "阅读", image: "/hobby3.jpg", description: "在书海中徜徉，汲取知识，丰富内心世界。" },
+    { name: "烹饪", image: "/hobby4.jpg", description: "享受烹饪的乐趣，创造美味，与亲朋好友分享。" },
   ];
 
   const containerRef = useRef<HTMLDivElement>(null);
@@ -77,20 +77,28 @@ export default function Home() {
         <h3 className="text-3xl font-semibold text-gray-900 mb-12 text-center">我的爱好</h3>
         <div ref={containerRef} className="space-y-24">
           {hobbies.map((hobby, index) => (
-            <div key={index} className="hobby-item opacity-0 transition-opacity duration-1000">
-              <div className="bg-white shadow-lg rounded-lg overflow-hidden">
+            <div key={index} className={`hobby-item opacity-0 transition-opacity duration-1000 flex ${index % 2 === 0 ? 'flex-row' : 'flex-row-reverse'}`}>
+              <div className="w-1/2">
                 <Image
                   src={hobby.image}
                   alt={hobby.name}
-                  width={1200}
-                  height={800}
-                  className="w-full h-96 object-cover"
+                  width={600}
+                  height={400}
+                  className="w-full h-96 object-cover rounded-lg"
                 />
-                <div className="p-6">
-                  <h4 className="text-2xl font-semibold text-gray-900 mb-2">{hobby.name}</h4>
-                  <p className="text-gray-600">这里可以添加关于{hobby.name}的简短描述或者您为什么喜欢这个爱好。</p>
-                </div>
               </div>
+              <motion.div 
+                className="w-1/2 flex items-center p-8"
+                initial={{ opacity: 0, x: index % 2 === 0 ? 50 : -50 }}
+                whileInView={{ opacity: 1, x: 0 }}
+                transition={{ duration: 0.8 }}
+                viewport={{ once: true }}
+              >
+                <div>
+                  <h4 className="text-2xl font-semibold text-gray-900 mb-4">{hobby.name}</h4>
+                  <p className="text-gray-600">{hobby.description}</p>
+                </div>
+              </motion.div>
             </div>
           ))}
         </div>
