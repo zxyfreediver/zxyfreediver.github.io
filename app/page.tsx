@@ -7,9 +7,8 @@ import { useEffect, useRef } from 'react';
 
 export default function Home() {
   const hobbies = [
-    { name: "摄影", image: "/hobby1.jpg", description: "通过镜头捕捉世界的美好瞬间，记录生活的精彩。" },
-    { name: "旅行", image: "/hobby2.jpg", description: "探索未知的地方，体验不同的文化，拓展视野。" },
-    { name: "阅读", image: "/hobby3.jpg", description: "在书海中徜徉，汲取知识，丰富内心世界。" },
+    { name: "写代码", image: "/hobby1.jpg", description: "通过写代码，创造出有用的东西。" },
+    { name: "潜水", image: "/hobby1.jpg", description: "通过潜水，探索海底世界。" },
     { name: "烹饪", image: "/hobby4.jpg", description: "享受烹饪的乐趣，创造美味，与亲朋好友分享。" },
   ];
 
@@ -71,9 +70,9 @@ export default function Home() {
             priority
           />
           <div>
-            <h2 className="text-4xl font-bold text-gray-900 mb-4">你好,我是[您的名字]</h2>
-            <p className="text-xl text-gray-700 mb-4">我是一名[您的职业],对[您的兴趣/专长]充满热情。</p>
-            <p className="text-lg text-gray-600">这里可以添加更多关于您自己的介绍,比如您的背景、目标或者人生哲学等。</p>
+            <h2 className="text-4xl font-bold text-gray-900 mb-4">我是赵星雨, 英文名是 Mars</h2>
+            <p className="text-xl text-gray-700 mb-4">我是一名前端开发工程师。</p>
+            <p className="text-lg text-gray-600">喜欢潜水和烹饪。</p>
           </div>
         </motion.div>
 
