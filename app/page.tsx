@@ -4,44 +4,44 @@ import Image from "next/image";
 import { FaGithub, FaEnvelope } from 'react-icons/fa';
 import { motion } from 'framer-motion';
 import { useEffect, useRef } from 'react';
-import hobby1 from '../public/images/hobby-code.jpeg';
-import hobby2 from '../public/images/hobby-dive.jpg';
-import hobby3 from '../public/images/hobby-cooking.jpeg';
+import hobby1 from '@/public/images/hobby-code.jpeg';
+import hobby2 from '@/public/images/hobby-dive.jpg';
+import hobby3 from '@/public/images/hobby-cooking.jpeg';
+
+const hobbies = [
+  {
+    name: "潜水",
+    image: hobby2,
+    description: [
+      { text: "通过潜水，探索海底世界。" },
+      { text: 'AIDA 4 星潜水员，PADI 自由潜教练，OW 潜水员'},
+      { text: '泳池：静态闭气 4 分 32 秒, 动态双璞 PB 81 米。'},
+      { text: '开放水域：双璞下潜最大深度 32 米。'},
+      { text: '喜欢大海，喜欢自由潜。梦想是潜遍全世界的海，与全世界的海洋生物合影。'},
+      // { text: "AIDA 4 星潜水员", link: "https://www.aidainternational.org/", linkText: "了解更多" }
+    ]
+  },
+  {
+    name: "代码",
+    image: hobby1,
+    description: [
+      { text: "擅长前端开发，喜欢研究新技术。" },
+      { text: "技术栈是 React, Vue, Node.js，Taro，uni-app 等"},
+      { text: '想成为一名全栈独立开发者，过数字游民的旅居生活'},
+      { text: "查看我的项目", link: "https://github.com/zxyfreediver", linkText: "GitHub" }
+    ]
+  },
+  {
+    name: "烹饪",
+    image: hobby3,
+    description: [
+      { text: "享受烹饪的乐趣，创造美味，与亲朋好友分享。" },
+      { text: "我的食谱博客", link: "https://your-cooking-blog.com", linkText: "访问博客" }
+    ]
+  },
+];
 
 export default function Home() {
-
-  const hobbies = [
-    {
-      name: "潜水",
-      image: hobby2,
-      description: [
-        { text: "通过潜水，探索海底世界。" },
-        { text: 'AIDA 4 星潜水员，PADI 自由潜教练，OW 潜水员'},
-        { text: '泳池：静态闭气 4 分 32 秒, 动态双璞 PB 81 米。'},
-        { text: '开放水域：双璞下潜最大深度 32 米。'},
-        { text: '喜欢大海，喜欢自由潜。梦想是潜遍全世界的海，与全世界的海洋生物合影。'},
-        // { text: "AIDA 4 星潜水员", link: "https://www.aidainternational.org/", linkText: "了解更多" }
-      ]
-    },
-    {
-      name: "写代码",
-      image: hobby1,
-      description: [
-        { text: "擅长前端开发，喜欢研究新技术。" },
-        { text: "技术栈是 React, Vue, Node.js，Taro，uni-app 等"},
-        { text: '想成为一名全栈独立开发者，过数字游民的旅居生活'},
-        { text: "查看我的项目", link: "https://github.com/zxyfreediver", linkText: "GitHub" }
-      ]
-    },
-    {
-      name: "烹饪",
-      image: hobby3,
-      description: [
-        { text: "享受烹饪的乐趣，创造美味，与亲朋好友分享。" },
-        { text: "我的食谱博客", link: "https://your-cooking-blog.com", linkText: "访问博客" }
-      ]
-    },
-  ];
 
   const containerRef = useRef<HTMLDivElement>(null);
 
