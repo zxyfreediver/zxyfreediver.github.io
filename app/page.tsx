@@ -70,7 +70,7 @@ export default function Home() {
             priority
           />
           <div>
-            <h2 className="text-4xl font-bold text-gray-900 mb-4">我是赵星雨, 英文名是 Mars</h2>
+            <h2 className="text-4xl font-bold text-gray-900 mb-4">我的个人网站</h2>
             <p className="text-xl text-gray-700 mb-4">我是一名前端开发工程师。</p>
             <p className="text-lg text-gray-600">喜欢潜水和烹饪。</p>
           </div>
