@@ -8,6 +8,7 @@ import hobbyCode from '@/public/images/hobby-code.jpeg';
 import hobbyDive from '@/public/images/hobby-dive.jpg';
 import hobbyCooking from '@/public/images/hobby-cooking.jpeg';
 import hobbyPet from '@/public/images/hobby-pet.jpg';
+import TravelMap from '@/app/components/TravelMap';
 
 const hobbies = [
   {
@@ -137,6 +138,11 @@ export default function Home() {
               </motion.div>
             </div>
           ))}
+        </div>
+        
+        <div className="mt-24">
+          <h3 className="text-3xl font-semibold text-gray-900 mb-8 text-center">我的足迹</h3>
+          <TravelMap />
         </div>
       </main>
     </div>
