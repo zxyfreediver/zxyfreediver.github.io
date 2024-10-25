@@ -2,16 +2,23 @@ import { useEffect } from 'react';
 import L from 'leaflet';
 import 'leaflet/dist/leaflet.css';
 
-const MapComponent = ({ mapRef, visitedCountries, dogPawIcon }) => {
+const MapComponent = ({ mapRef, visitedCountries, dogPawIcon }: {
+  mapRef: React.RefObject<L.Map>;
+  visitedCountries: Array<{ lat: number; lng: number; name: string }>;
+  dogPawIcon: { src: string };
+}) => {
   useEffect(() => {
     if (!mapRef.current) {
-      mapRef.current = L.map('map', {
+      const map = L.map('map', {
         zoomControl: false
       }).setView([35.8617, 104.1954], 4);
+      
+      // 使用非空断言操作符来避免TypeScript的只读属性错误
+      mapRef.current = map as L.Map;
 
       L.tileLayer('https://{s}.basemaps.cartocdn.com/rastertiles/voyager/{z}/{x}/{y}{r}.png', {
         attribution: '&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors &copy; <a href="https://carto.com/attributions">CARTO</a>'
-      }).addTo(mapRef.current);
+      }).addTo(map);
 
       // 创建狗脚印图标
       const pawIcon = L.icon({
