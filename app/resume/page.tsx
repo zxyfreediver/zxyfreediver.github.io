@@ -58,7 +58,7 @@ export default function Resume() {
             },
             {
               company: "北京道远教育科技有限公司",
-              position: "开发前端工程师",
+              position: "前端开发工程师",
               period: "2019.7 - 2021.3",
               responsibilities: [
                 "使用 vue，uni-app 从 0 到 1 开发了多个项目，包括官网、管理后台、小程序等"

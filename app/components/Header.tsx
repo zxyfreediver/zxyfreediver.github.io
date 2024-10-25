@@ -5,10 +5,9 @@ import { FaGithub, FaEnvelope } from 'react-icons/fa';
 
 export default function Header() {
   return (
-    <div className="bg-gray-100 text-gray-700">
-      <header className="sticky top-0 z-50">
-        <div className="absolute inset-0 bg-white bg-opacity-70 backdrop-filter backdrop-blur-lg"></div>
-        <nav className="relative max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-4">
+    <div className="sticky top-0 z-50 bg-white bg-opacity-70 backdrop-filter backdrop-blur-lg">
+      <header>
+        <nav className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-4">
           <div className="flex justify-between items-center">
             <Link href="/" className="text-2xl font-bold text-gray-900">我的个人空间</Link>
             <div className="flex space-x-4 items-center">
