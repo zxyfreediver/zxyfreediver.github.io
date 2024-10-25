@@ -10,7 +10,7 @@ export default function Header() {
         <div className="absolute inset-0 bg-white bg-opacity-70 backdrop-filter backdrop-blur-lg"></div>
         <nav className="relative max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-4">
           <div className="flex justify-between items-center">
-            <Link href="/" className="text-2xl font-bold text-gray-900">我的个人网站</Link>
+            <Link href="/" className="text-2xl font-bold text-gray-900">我的个人空间</Link>
             <div className="flex space-x-4 items-center">
               {/* <Link href="/" className="text-gray-700 hover:text-gray-900 transition-colors">
                 首页

@@ -4,46 +4,49 @@ import Image from "next/image";
 import { motion } from 'framer-motion';
 import { useEffect, useRef } from 'react';
 import Header from '@/app/components/Header';
-import hobby1 from '@/public/images/hobby-code.jpeg';
-import hobby2 from '@/public/images/hobby-dive.jpg';
-import hobby3 from '@/public/images/hobby-cooking.jpeg';
+import hobbyCode from '@/public/images/hobby-code.jpeg';
+import hobbyDive from '@/public/images/hobby-dive.jpg';
+import hobbyCooking from '@/public/images/hobby-cooking.jpeg';
+import hobbyPet from '@/public/images/hobby-pet.jpg';
 
 const hobbies = [
   {
     name: "自由潜水",
-    image: hobby2,
+    image: hobbyDive,
     description: [
       { text: 'AIDA 4 星自由潜水员，PADI 自由潜教练'},
-      { text: '泳池：静态闭气 4 分 32 秒，动态双璞 PB 81 米'},
-      { text: '开放水域：双璞下潜最大深度 32 米'},
-      { text: '喜欢大海，喜欢自由潜，潜遍全世界的海'},
-      { link: "https://www.instagram.com/zxyfreediver/", linkText: "查看我与海洋生物的合影"}
+      { text: '静态闭气 4 分 32 秒，动态双璞 PB 81 米'},
+      { text: '双璞下潜最大深度 32 米'},
+      { link: "/diving", linkText: "我与海洋生物的合影"}
     ]
   },
   {
     name: "宠物",
-    image: hobby2,
+    image: hobbyPet,
     description: [
-      { text: "喜欢养宠物" },
-      { text: "家里有 2 只狗" },
+      { text: "我非常喜欢宠物，家里有 2 只狗" },
+      { text: "一只叫妮娜，是一只流浪的串串，从 2 岁开始收养" },
+      { text: "一只叫二毛，是只金毛，从 3 个月开始收养" },
+      { link: "/pet", linkText: "我的宠物"}
     ]
   },
   {
     name: "编程",
-    image: hobby1,
+    image: hobbyCode,
     description: [
       { text: "擅长前端开发，喜欢研究新技术" },
       { text: "技术栈是 React, Vue, Node.js，Taro，Uni-App 等"},
-      { text: '想成为一名全栈独立开发者，过数字游民的旅居生活'},
-      { text: "查看我的项目", link: "https://github.com/zxyfreediver", linkText: "GitHub" }
+      { link: "/projects", linkText: "我的个人项目" },
+      { link: "https://github.com/zxyfreediver", linkText: "我的 gitHub" }
     ]
   },
   {
     name: "美食",
-    image: hobby3,
+    image: hobbyCooking,
     description: [
-      { text: "享受烹饪的乐趣，创造美味，与亲朋好友分享" },
-      { text: "我的食谱博客", link: "https://your-cooking-blog.com", linkText: "访问博客" }
+      { text: "喜欢各种美食，不限国家，不限地域" },
+      { text: "英国没有美食"},
+      { link: "https://your-cooking-blog.com", linkText: "我的美食主页" }
     ]
   },
 ];
