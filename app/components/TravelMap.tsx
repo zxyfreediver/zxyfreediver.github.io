@@ -1,6 +1,6 @@
 'use client'
 
-import { useEffect, useRef } from 'react';
+import { useRef } from 'react';
 import dynamic from 'next/dynamic';
 
 // 导入狗脚印 SVG
@@ -30,10 +30,9 @@ const visitedCountries = [
 ];
 
 const TravelMap = () => {
-  const mapRef = useRef<any>(null);
-
+  const mapRef = useRef<HTMLDivElement>(null);
   const MapComponent = dynamic(
-    () => import('./MapComponent'),
+    () => import('@/app/components/MapComponent'),
     { 
       loading: () => <p>地图加载中...</p>,
       ssr: false
