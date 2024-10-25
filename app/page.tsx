@@ -84,7 +84,7 @@ export default function Home() {
           className="flex flex-col md:flex-row items-center mb-6"
         >
           <Image
-            src="/profile.jpg"
+            src={hobbyPet}
             alt="个人照片"
             width={300}
             height={300}
