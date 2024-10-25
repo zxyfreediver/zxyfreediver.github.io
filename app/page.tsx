@@ -10,32 +10,39 @@ import hobby3 from '@/public/images/hobby-cooking.jpeg';
 
 const hobbies = [
   {
-    name: "潜水",
+    name: "自由潜水",
     image: hobby2,
     description: [
-      { text: "通过潜水，探索海底世界。" },
-      { text: 'AIDA 4 星潜水员，PADI 自由潜教练，OW 潜水员'},
-      { text: '泳池：静态闭气 4 分 32 秒, 动态双璞 PB 81 米。'},
-      { text: '开放水域：双璞下潜最大深度 32 米。'},
-      { text: '喜欢大海，喜欢自由潜。梦想是潜遍全世界的海，与全世界的海洋生物合影。'},
-      // { text: "AIDA 4 星潜水员", link: "https://www.aidainternational.org/", linkText: "了解更多" }
+      { text: 'AIDA 4 星自由潜水员，PADI 自由潜教练'},
+      { text: '泳池：静态闭气 4 分 32 秒，动态双璞 PB 81 米'},
+      { text: '开放水域：双璞下潜最大深度 32 米'},
+      { text: '喜欢大海，喜欢自由潜，潜遍全世界的海'},
+      { link: "https://www.instagram.com/zxyfreediver/", linkText: "查看我与海洋生物的合影"}
     ]
   },
   {
-    name: "代码",
+    name: "宠物",
+    image: hobby2,
+    description: [
+      { text: "喜欢养宠物" },
+      { text: "家里有 2 只狗" },
+    ]
+  },
+  {
+    name: "编程",
     image: hobby1,
     description: [
-      { text: "擅长前端开发，喜欢研究新技术。" },
-      { text: "技术栈是 React, Vue, Node.js，Taro，uni-app 等"},
+      { text: "擅长前端开发，喜欢研究新技术" },
+      { text: "技术栈是 React, Vue, Node.js，Taro，Uni-App 等"},
       { text: '想成为一名全栈独立开发者，过数字游民的旅居生活'},
       { text: "查看我的项目", link: "https://github.com/zxyfreediver", linkText: "GitHub" }
     ]
   },
   {
-    name: "烹饪",
+    name: "美食",
     image: hobby3,
     description: [
-      { text: "享受烹饪的乐趣，创造美味，与亲朋好友分享。" },
+      { text: "享受烹饪的乐趣，创造美味，与亲朋好友分享" },
       { text: "我的食谱博客", link: "https://your-cooking-blog.com", linkText: "访问博客" }
     ]
   },
@@ -71,13 +78,13 @@ export default function Home() {
           <div className="flex justify-between items-center">
             <h1 className="text-2xl font-bold text-gray-900">我的个人网站</h1>
             <div className="flex space-x-4 items-center">
-              <a href="/resume" className="text-gray-600 hover:text-gray-900 transition-colors">
+              {/* <a href="/resume" className="text-gray-600 hover:text-gray-900 transition-colors">
                 简历
-              </a>
-              <a href="mailto:your.email@example.com" className="text-gray-600 hover:text-gray-900 transition-colors">
+              </a> */}
+              <a href="mailto:18310343827@163.com" className="text-gray-600 hover:text-gray-900 transition-colors">
                 <FaEnvelope className="w-6 h-6" />
               </a>
-              <a href="https://github.com/yourusername" className="text-gray-600 hover:text-gray-900 transition-colors">
+              <a href="https://github.com/zxyfreediver" className="text-gray-600 hover:text-gray-900 transition-colors">
                 <FaGithub className="w-6 h-6" />
               </a>
             </div>
@@ -101,13 +108,13 @@ export default function Home() {
             priority
           />
           <div>
-            <h2 className="text-4xl font-bold text-gray-900 mb-4">我的个人网站</h2>
-            <p className="text-xl text-gray-700 mb-4">我是一名软件工程师。</p>
-            <p className="text-lg text-gray-600">喜欢潜水和烹饪。</p>
+            <h2 className="text-4xl font-bold text-gray-900 mb-4">我的个人空间</h2>
+            <p className="text-xl text-gray-700 mb-4">软件工程师</p>
+            <p className="text-lg text-gray-600">喜欢潜水，编程，美食，宠物</p>
           </div>
         </motion.div>
 
-        <h3 className="text-3xl font-semibold text-gray-900 mb-12 text-center">自我介绍</h3>
+        <h3 className="text-3xl font-semibold text-gray-900 mb-12 text-center">热爱生活，热爱工作</h3>
         <div ref={containerRef} className="space-y-24">
           {hobbies.map((hobby, index) => (
             <div key={index} className={`hobby-item opacity-0 transition-opacity duration-1000 flex ${index % 2 === 0 ? 'flex-row' : 'flex-row-reverse'}`}>

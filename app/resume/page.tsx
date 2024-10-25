@@ -15,10 +15,10 @@ export default function Resume() {
               <Link href="/" className="text-gray-700 hover:text-gray-900 transition-colors">
                 首页
               </Link>
-              <a href="mailto:your.email@example.com" className="text-gray-700 hover:text-gray-900 transition-colors">
+              <a href="mailto:18310343827@163.com" className="text-gray-700 hover:text-gray-900 transition-colors">
                 <FaEnvelope className="w-6 h-6" />
               </a>
-              <a href="https://github.com/yourusername" className="text-gray-700 hover:text-gray-900 transition-colors">
+              <a href="https://github.com/zxyfreediver" className="text-gray-700 hover:text-gray-900 transition-colors">
                 <FaGithub className="w-6 h-6" />
               </a>
             </div>
