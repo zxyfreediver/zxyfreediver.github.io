@@ -1,9 +1,9 @@
 'use client'
 
 import Image from "next/image";
-import { FaGithub, FaEnvelope } from 'react-icons/fa';
 import { motion } from 'framer-motion';
 import { useEffect, useRef } from 'react';
+import Header from '@/app/components/Header';
 import hobby1 from '@/public/images/hobby-code.jpeg';
 import hobby2 from '@/public/images/hobby-dive.jpg';
 import hobby3 from '@/public/images/hobby-cooking.jpeg';
@@ -72,26 +72,7 @@ export default function Home() {
 
   return (
     <div className="min-h-screen bg-gray-100">
-      <header className="sticky top-0 z-50">
-        <div className="absolute inset-0 bg-white bg-opacity-70 backdrop-filter backdrop-blur-lg"></div>
-        <nav className="relative max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-4">
-          <div className="flex justify-between items-center">
-            <h1 className="text-2xl font-bold text-gray-900">我的个人网站</h1>
-            <div className="flex space-x-4 items-center">
-              {/* <a href="/resume" className="text-gray-600 hover:text-gray-900 transition-colors">
-                简历
-              </a> */}
-              <a href="mailto:18310343827@163.com" className="text-gray-600 hover:text-gray-900 transition-colors">
-                <FaEnvelope className="w-6 h-6" />
-              </a>
-              <a href="https://github.com/zxyfreediver" className="text-gray-600 hover:text-gray-900 transition-colors">
-                <FaGithub className="w-6 h-6" />
-              </a>
-            </div>
-          </div>
-        </nav>
-      </header>
-
+      <Header />
       <main className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-12">
         <motion.div 
           initial={{ opacity: 0, y: 50 }}
