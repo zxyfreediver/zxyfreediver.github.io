@@ -15,9 +15,9 @@ const hobbies = [
     image: hobbyDive,
     description: [
       { text: 'AIDA 4 星自由潜水员，PADI 自由潜教练'},
-      { text: '静态闭气 4 分 32 秒，动态双璞 PB 81 米'},
+      { text: '静态闭气 4 分 32 秒，动态双璞泳池 81 米'},
       { text: '双璞下潜最大深度 32 米'},
-      { link: "/diving", linkText: "我与海洋生物的合影"}
+      { text: '我与海洋生物的合影', link: "/diving", linkText: "点击查看"}
     ]
   },
   {
@@ -27,7 +27,7 @@ const hobbies = [
       { text: "我非常喜欢宠物，家里有 2 只狗" },
       { text: "一只叫妮娜，是一只流浪的串串，从 2 岁开始收养" },
       { text: "一只叫二毛，是只金毛，从 3 个月开始收养" },
-      { link: "/pet", linkText: "我的宠物"}
+      { text: '我的宠物', link: "/pet", linkText: "点击查看"}
     ]
   },
   {
@@ -36,8 +36,8 @@ const hobbies = [
     description: [
       { text: "擅长前端开发，喜欢研究新技术" },
       { text: "技术栈是 React, Vue, Node.js，Taro，Uni-App 等"},
-      { link: "/projects", linkText: "我的个人项目" },
-      { link: "https://github.com/zxyfreediver", linkText: "我的 gitHub" }
+      { text: "我的个人项目", link: "/projects", linkText: "点击查看"},
+      { text: "我的 gitHub", link: "https://github.com/zxyfreediver", linkText: "点击查看"}
     ]
   },
   {
@@ -46,7 +46,7 @@ const hobbies = [
     description: [
       { text: "喜欢各种美食，不限国家，不限地域" },
       { text: "英国没有美食"},
-      { link: "https://your-cooking-blog.com", linkText: "我的美食主页" }
+      { text: '我的美食主页', link: "https://your-cooking-blog.com", linkText: "点击查看"}
     ]
   },
 ];
@@ -94,7 +94,7 @@ export default function Home() {
           <div>
             <h2 className="text-4xl font-bold text-gray-900 mb-4">我的个人空间</h2>
             <p className="text-xl text-gray-700 mb-4">软件工程师</p>
-            <p className="text-lg text-gray-600">喜欢潜水，编程，美食，宠物</p>
+            <p className="text-lg text-gray-600">喜欢潜水，宠物，编程，美食</p>
           </div>
         </motion.div>
 
