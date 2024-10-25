@@ -1,8 +1,7 @@
 'use client'
 
 import { useEffect, useRef } from 'react';
-import L from 'leaflet';
-import 'leaflet/dist/leaflet.css';
+import dynamic from 'next/dynamic';
 
 // 导入狗脚印 SVG
 import dogPawIcon from '@/public/images/dog-paw.svg';
@@ -31,48 +30,19 @@ const visitedCountries = [
 ];
 
 const TravelMap = () => {
-  const mapRef = useRef<L.Map | null>(null);
+  const mapRef = useRef<any>(null);
 
-  useEffect(() => {
-    if (typeof window !== 'undefined') {
-      if (!mapRef.current) {
-        mapRef.current = L.map('map', {
-          zoomControl: false
-        }).setView([35.8617, 104.1954], 4);
-
-        L.tileLayer('https://{s}.basemaps.cartocdn.com/rastertiles/voyager/{z}/{x}/{y}{r}.png', {
-          attribution: '&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors &copy; <a href="https://carto.com/attributions">CARTO</a>'
-        }).addTo(mapRef.current);
-
-        // 创建狗脚印图标
-        const pawIcon = L.icon({
-          iconUrl: dogPawIcon.src,
-          iconSize: [30, 30],
-          iconAnchor: [15, 15],
-          popupAnchor: [0, -15]
-        });
-
-        visitedCountries.forEach(country => {
-          L.marker([country.lat, country.lng], { icon: pawIcon })
-            .addTo(mapRef.current!)
-            .bindPopup(country.name, {
-              className: 'custom-popup'
-            });
-        });
-      }
+  const MapComponent = dynamic(
+    () => import('./MapComponent'),
+    { 
+      loading: () => <p>地图加载中...</p>,
+      ssr: false
     }
-
-    return () => {
-      if (mapRef.current) {
-        mapRef.current.remove();
-        mapRef.current = null;
-      }
-    };
-  }, []);
+  );
 
   return (
     <>
-      <div id="map" style={{ height: '400px', width: '100%', borderRadius: '15px', overflow: 'hidden' }} />
+      <MapComponent mapRef={mapRef} visitedCountries={visitedCountries} dogPawIcon={dogPawIcon} />
       <style jsx global>{`
         .custom-popup .leaflet-popup-content-wrapper {
           background: rgba(255, 255, 255, 0.8);
