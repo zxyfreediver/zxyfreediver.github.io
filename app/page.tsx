@@ -3,7 +3,6 @@
 import Image from "next/image";
 import { motion } from 'framer-motion';
 import { useEffect, useRef } from 'react';
-import Header from '@/app/components/Header';
 import hobbyCode from '@/public/images/hobby-code.jpeg';
 import hobbyDive from '@/public/images/hobby-dive.jpg';
 import hobbyCooking from '@/public/images/hobby-cooking.jpeg';
@@ -76,7 +75,6 @@ export default function Home() {
 
   return (
     <div className="min-h-screen bg-gray-100">
-      <Header />
       <main className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-12">
         <motion.div 
           initial={{ opacity: 0, y: 50 }}

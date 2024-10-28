@@ -1,12 +1,10 @@
 'use client'
 
 import { FaPhone, FaMapMarkerAlt, FaEnvelope } from 'react-icons/fa';
-import Header from '@/app/components/Header';
 
 export default function Resume() {
   return (
     <div className="min-h-screen bg-gray-100 text-gray-700">
-      <Header />
       <main className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 py-12">
         <h1 className="text-4xl font-bold text-gray-900 mb-8">个人简历</h1>
         
