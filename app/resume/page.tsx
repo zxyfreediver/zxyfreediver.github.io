@@ -1,5 +1,3 @@
-'use client'
-
 import { FaPhone, FaMapMarkerAlt, FaEnvelope } from 'react-icons/fa';
 
 export default function Resume() {
