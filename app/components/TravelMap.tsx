@@ -1,6 +1,5 @@
 'use client'
 
-import { useRef } from 'react';
 import dynamic from 'next/dynamic';
 
 // 导入狗脚印 SVG
