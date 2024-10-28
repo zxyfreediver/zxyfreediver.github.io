@@ -1,12 +1,14 @@
-import { useEffect } from 'react';
+import { useEffect, useRef } from 'react';
 import L from 'leaflet';
 import 'leaflet/dist/leaflet.css';
 
-const MapComponent = ({ mapRef, visitedCountries, dogPawIcon }: {
-  mapRef: React.RefObject<L.Map>;
+const MapComponent = ({ visitedCountries, dogPawIcon }: {
   visitedCountries: Array<{ lat: number; lng: number; name: string }>;
   dogPawIcon: { src: string };
 }) => {
+
+  const mapRef = useRef<L.Map>(null);
+
   useEffect(() => {
     if (!mapRef.current) {
       mapRef.current = L.map('map', {

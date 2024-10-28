@@ -30,7 +30,6 @@ const visitedCountries = [
 ];
 
 const TravelMap = () => {
-  const mapRef = useRef<HTMLDivElement>(null);
   const MapComponent = dynamic(
     () => import('@/app/components/MapComponent'),
     { 
@@ -41,7 +40,7 @@ const TravelMap = () => {
 
   return (
     <>
-      <MapComponent mapRef={mapRef} visitedCountries={visitedCountries} dogPawIcon={dogPawIcon} />
+      <MapComponent visitedCountries={visitedCountries} dogPawIcon={dogPawIcon} />
       <style jsx global>{`
         .custom-popup .leaflet-popup-content-wrapper {
           background: rgba(255, 255, 255, 0.8);
