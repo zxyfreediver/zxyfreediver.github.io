@@ -11,6 +11,16 @@ import TravelMap from '@/app/components/TravelMap';
 
 const hobbies = [
   {
+    name: "编程",
+    image: hobbyCode,
+    description: [
+      { text: "擅长前端开发，喜欢研究新技术" },
+      { text: "技术栈是 React, Vue, Node.js，Taro，Uni-App 等"},
+      { text: "我的个人项目", link: "/projects", linkText: "点击查看"},
+      { text: "我的 Github", link: "https://github.com/zxyfreediver", linkText: "点击查看"}
+    ]
+  },
+  {
     name: "自由潜水",
     image: hobbyDive,
     description: [
@@ -31,13 +41,12 @@ const hobbies = [
     ]
   },
   {
-    name: "编程",
+    name: "打游戏",
     image: hobbyCode,
     description: [
-      { text: "擅长前端开发，喜欢研究新技术" },
-      { text: "技术栈是 React, Vue, Node.js，Taro，Uni-App 等"},
-      { text: "我的个人项目", link: "/projects", linkText: "点击查看"},
-      { text: "我的 gitHub", link: "https://github.com/zxyfreediver", linkText: "点击查看"}
+      { text: "魂游，卡牌，rouge-like，rpg游戏爱好者" },
+      { text: "dota2 重度玩家，游戏时长 5000+ 小时" },
+      { text: '我的游戏主页', link: "https://your-gaming-blog.com", linkText: "点击查看"}
     ]
   },
   {
