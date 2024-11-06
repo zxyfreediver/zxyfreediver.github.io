@@ -2,10 +2,10 @@
 
 import Link from 'next/link';
 import { FaGithub, FaEnvelope } from 'react-icons/fa';
-import { useState } from 'react';
+// import { useState } from 'react';
 
 export default function Header() {
-  const [isOpen, setIsOpen] = useState(false);
+  // const [isOpen, setIsOpen] = useState(false);
 
   return (
     <div className="sticky top-0 z-50 bg-white bg-opacity-70 backdrop-filter backdrop-blur-lg">
@@ -14,7 +14,7 @@ export default function Header() {
           <div className="flex justify-between items-center">
             <Link href="/" className="text-2xl font-bold text-gray-900">我的个人空间</Link>
             <div className="flex space-x-4 items-center">
-              <div className="relative">
+              {/* <div className="relative">
                 <button
                   onClick={() => setIsOpen(!isOpen)}
                   className="flex items-center text-gray-700 hover:text-gray-900 transition-colors"
@@ -31,7 +31,7 @@ export default function Header() {
                     </Link>
                   </div>
                 )}
-              </div>
+              </div> */}
               <a href="mailto:18310343827@163.com" className="text-gray-700 hover:text-gray-900 transition-colors">
                 <FaEnvelope className="w-6 h-6" />
               </a>

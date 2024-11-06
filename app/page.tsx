@@ -124,7 +124,6 @@ export default function Home() {
                       {desc.text}
                       {desc.link && (
                         <>
-                          {" "}
                           <a href={desc.link} className="text-blue-500 hover:underline" target="_blank" rel="noopener noreferrer">
                             {desc.linkText}
                           </a>
