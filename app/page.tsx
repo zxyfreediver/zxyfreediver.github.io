@@ -21,7 +21,7 @@ const hobbies = [
     ]
   },
   {
-    name: "自由潜水",
+    name: "潜水",
     image: hobbyDive,
     description: [
       { text: 'AIDA 4 星自由潜水员，PADI 自由潜教练'},
@@ -34,14 +34,14 @@ const hobbies = [
     name: "宠物",
     image: hobbyPet,
     description: [
-      { text: "我非常喜欢宠物，家里有 2 只狗" },
-      { text: "一只叫妮娜，是一只流浪的串串，从 2 岁开始收养" },
+      { text: "非常喜欢宠物，家里有 2 只狗" },
+      { text: "一只叫妮娜，是一只流浪的串串，从 1 岁开始收养" },
       { text: "一只叫二毛，是只金毛，从 3 个月开始收养" },
       { text: '我的宠物', link: "/pet", linkText: "点击查看"}
     ]
   },
   {
-    name: "打游戏",
+    name: "游戏",
     image: hobbyCode,
     description: [
       { text: "魂游，卡牌，rouge-like，rpg游戏爱好者" },
@@ -54,8 +54,6 @@ const hobbies = [
     image: hobbyCooking,
     description: [
       { text: "喜欢各种美食，不限国家，不限地域" },
-      { text: "英国没有美食"},
-      { text: '我的美食主页', link: "https://your-cooking-blog.com", linkText: "点击查看"}
     ]
   },
 ];
@@ -102,7 +100,7 @@ export default function Home() {
           <div>
             <h2 className="text-4xl font-bold text-gray-900 mb-4">我的个人空间</h2>
             <p className="text-xl text-gray-700 mb-4">软件工程师</p>
-            <p className="text-lg text-gray-600">喜欢潜水，宠物，编程，美食</p>
+            <p className="text-lg text-gray-600">喜欢编程，潜水，宠物，游戏，美食</p>
           </div>
         </motion.div>
 
