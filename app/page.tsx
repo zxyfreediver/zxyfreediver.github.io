@@ -8,6 +8,7 @@ import hobbyDive from '@/public/images/hobby-dive.jpg';
 import hobbyCooking from '@/public/images/hobby-cooking.jpeg';
 import hobbyPet from '@/public/images/hobby-pet.jpg';
 import TravelMap from '@/app/components/TravelMap';
+import Header from '@/app/components/Header';
 
 const hobbies = [
   {
@@ -81,8 +82,10 @@ export default function Home() {
   }, []);
 
   return (
-    <div className="min-h-screen bg-gray-100">
-      <main className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-12">
+    <>
+      <Header />
+      <div className="min-h-screen bg-gray-100">
+        <main className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-12">
         <motion.div 
           initial={{ opacity: 0, y: 50 }}
           animate={{ opacity: 1, y: 0 }}
@@ -149,6 +152,7 @@ export default function Home() {
           <TravelMap />
         </div>
       </main>
-    </div>
+      </div>
+    </>
   );
 }

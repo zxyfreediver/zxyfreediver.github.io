@@ -1,32 +1,12 @@
 'use client'
 
 import { FaPhone, FaMapMarkerAlt, FaEnvelope } from 'react-icons/fa';
-import { useEffect, useState } from 'react';
 
 export default function Resume() {
-  const [isLoading, setIsLoading] = useState(true);
-
+  
   const handleDownload = () => {
     window.print();
   };
-
-  useEffect(() => {
-    const header = document.querySelector('header');
-    if (header) {
-      header.style.display = 'none';
-      setIsLoading(false);
-    }
-
-    return () => {
-      if (header) {
-        header.style.display = 'block';
-      }
-    };
-  }, []);
-
-  if (isLoading) {
-    return null;
-  }
 
   return (
     <div className="min-h-screen bg-gray-100 text-gray-700">

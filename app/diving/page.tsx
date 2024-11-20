@@ -5,6 +5,7 @@ import Image from 'next/image';
 import nurseShark from '@/public/diving/animals/nurse-shark.jpg';
 import whaleShark from '@/public/diving/animals/whale-shark.jpg';
 import manta from '@/public/diving/animals/manta.jpg';
+import Header from '@/app/components/Header';
 
 // 更新潜水照片数组，包含动物名称和描述
 const divingPhotos = [
@@ -19,8 +20,10 @@ export default function DivingGallery() {
   const [selectedPhoto, setSelectedPhoto] = useState<typeof divingPhotos[0] | null>(null);
 
   return (
-    <div className="min-h-screen bg-gray-100">
-      <main className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-12">
+    <>  
+      <Header />
+      <div className="min-h-screen bg-gray-100">
+        <main className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-12">
         <h1 className="text-4xl font-bold text-gray-900 mb-8">我的潜水生涯</h1>
         <section className="mb-8">
           <ul className="space-y-2 text-gray-700">
@@ -86,5 +89,6 @@ export default function DivingGallery() {
         </div>
       )}
     </div>
+    </>
   );
 }
