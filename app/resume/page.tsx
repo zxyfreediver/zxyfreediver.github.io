@@ -6,6 +6,10 @@ import { useEffect, useState } from 'react';
 export default function Resume() {
   const [isLoading, setIsLoading] = useState(true);
 
+  const handleDownload = () => {
+    window.print();
+  };
+
   useEffect(() => {
     const header = document.querySelector('header');
     if (header) {
@@ -27,7 +31,15 @@ export default function Resume() {
   return (
     <div className="min-h-screen bg-gray-100 text-gray-700">
       <main className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 py-12">
-        <h1 className="text-4xl font-bold text-gray-900 mb-8">个人简历</h1>
+        <div className="flex justify-between items-center mb-8">
+          <h1 className="text-4xl font-bold text-gray-900">个人简历</h1>
+          <button
+            onClick={handleDownload}
+            className="bg-blue-500 hover:bg-blue-600 text-white px-4 py-2 rounded-lg flex items-center"
+          >
+            下载 PDF
+          </button>
+        </div>
         
         <section className="mb-12">
           <h2 className="text-2xl font-semibold text-gray-700 mb-4">个人信息</h2>

@@ -35,3 +35,25 @@ body {
 
 /* 您的自定义样式 */
 
+@media print {
+  header {
+    display: none !important;
+  }
+  
+  body {
+    background: white !important;
+  }
+  
+  .min-h-screen {
+    min-height: auto !important;
+  }
+  
+  button {
+    display: none !important;
+  }
+  
+  @page {
+    margin: 2cm;
+  }
+}
+
