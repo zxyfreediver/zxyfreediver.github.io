@@ -25,6 +25,7 @@ export default function Resume() {
           <h2 className="text-2xl font-semibold text-gray-700 mb-4">个人信息</h2>
           <div className="bg-white shadow rounded-lg p-6">
             <p className="text-lg mb-2"><strong>姓名：</strong>赵星雨</p>
+            <p className="text-lg mb-2"><strong>性别：</strong>男</p>
             <p className="text-lg mb-2 flex items-center"><FaEnvelope className="mr-2" /> 18310343827@163.com</p>
             <p className="text-lg mb-2 flex items-center"><FaPhone className="mr-2" /> +86 18310343827</p>
             <p className="text-lg mb-2 flex items-center"><FaMapMarkerAlt className="mr-2" /> 北京，中国</p>
