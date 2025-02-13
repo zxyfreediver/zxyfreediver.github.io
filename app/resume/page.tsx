@@ -25,7 +25,7 @@ export default function Resume() {
           <h2 className="text-2xl font-semibold text-gray-700 mb-4">个人信息</h2>
           <div className="bg-white shadow rounded-lg p-6">
             <div className="grid grid-cols-2 gap-4 mb-4">
-              <p className="text-lg"><strong>赵星雨</strong> | 男 | 30岁</p>
+              <p className="text-lg"><strong>赵星雨</strong> | 男 | 31岁</p>
               <p className="text-lg flex items-center gap-2">
                 <FaMapMarkerAlt /> 北京 · 8年工作经验
               </p>
@@ -70,9 +70,9 @@ export default function Resume() {
               position: "软件工程师",
               period: "2023.10 - 至今",
               responsibilities: [
-                "主导数字化平台架构设计，开发卫星终端定位调度系统（日活10万+），服务国家应急厅/工信部等政府单位",
+                "主导数字化平台项目，开发卫星终端定位调度系统（用户量200万+），服务国家应急厅/工信部等政府单位",
                 "构建研发效能管理平台，通过流程自动化提升团队协作效率",
-                "技术栈：SpringBoot+Vue全栈开发，使用Grafana+Prometheus实现系统监控，完成国产化PaaS组件迁移"
+                "技术栈：SpringBoot+Reactjs全栈开发，使用Grafana+Prometheus实现系统监控，完成国产化PaaS组件迁移"
               ]
             },
             {
@@ -82,7 +82,7 @@ export default function Resume() {
               responsibilities: [
                 "负责知乎核心业务模块（搜索/内容页/直播）前端开发，日均PV千万级",
                 "设计卡片工厂系统，通过配置化开发使功能迭代效率提升60%",
-                "主导客服系统重构，优化首屏加载速度至1.2s（原2.8s）"
+                "主导客服系统前端项目重构，优化首屏加载速度至1.2s（原2.8s）"
               ]
             },
             {
