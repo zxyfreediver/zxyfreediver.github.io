@@ -27,7 +27,7 @@ export default function Resume() {
             <div className="grid grid-cols-2 gap-4 mb-4">
               <p className="text-lg"><strong>赵星雨</strong> | 男 | 31岁</p>
               <p className="text-lg flex items-center gap-2">
-                <FaMapMarkerAlt /> 北京 · 8年工作经验
+                <FaMapMarkerAlt /> 北京 · 6年工作经验
               </p>
             </div>
             <div className="flex gap-4 text-blue-600">
@@ -141,7 +141,7 @@ export default function Resume() {
           <h2 className="text-2xl font-semibold text-gray-700 mb-4">其他项目经验</h2>
           <div className="bg-white shadow rounded-lg p-6">
             <ul className="list-disc list-inside text-gray-700">
-              <li>使用 taro + python fastapi + supabse 开发微信小程序 "闭气练习" 供自由潜水员日常训练使用，可通过微信小程序搜索</li>
+              <li>使用 taro + python fastapi + supabse 开发微信小程序 &quot;闭气练习&quot; 供自由潜水员日常训练使用，可通过微信小程序搜索</li>
               <li>使用 react native 利用 ai 开发闭气练习 app，并独立开发并发布到 google play，可访问<a href="https://play.google.com/store/apps/details?id=com.zln2.apneaplan" target="_blank" rel="noopener noreferrer"> https://play.google.com/store/apps/details?id=com.zln2.apneaplan </a>查看，点击链接下载体验</li>
               <li>使用 nextjs + vercel + cursor 部署自己的个人网站</li>
             </ul>
