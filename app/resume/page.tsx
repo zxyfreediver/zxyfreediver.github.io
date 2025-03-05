@@ -130,7 +130,6 @@ export default function Resume() {
               <h3 className="font-semibold mb-2">其他能力</h3>
               <ul className="list-disc list-inside">
                 <li>DevOps（CI/CD/Docker/K8s）</li>
-                <li>云原生（AWS/Aliyun/Tencent Cloud）</li>
                 <li>英语流利（CET-6/雅思6.5）</li>
               </ul>
             </div>
@@ -142,24 +141,12 @@ export default function Resume() {
           <div className="bg-white shadow rounded-lg p-6">
             <ul className="list-disc list-inside text-gray-700">
               <li>使用 taro + python fastapi + supabse 开发微信小程序 &quot;闭气练习&quot; 供自由潜水员日常训练使用，可通过微信小程序搜索</li>
-              <li>使用 react native 利用 ai 开发闭气练习 app，并独立开发并发布到 google play，可访问<a href="https://play.google.com/store/apps/details?id=com.zln2.apneaplan" target="_blank" rel="noopener noreferrer"> https://play.google.com/store/apps/details?id=com.zln2.apneaplan </a>查看，点击链接下载体验</li>
+              <li>使用 react native 开发闭气练习 app 可通过 googleplay 或者 applestore 搜索 Apnea Plan 试用
               <li>使用 nextjs + vercel + cursor 部署自己的个人网站</li>
             </ul>
           </div>
         </section>
-
-        <section className="mb-12">
-          <h2 className="text-2xl font-semibold text-gray-700 mb-4">个人介绍</h2>
-          <div className="bg-white shadow rounded-lg p-6">
-            <ul className="list-disc list-inside text-gray-700">
-              <li>CET-6, 雅思 6.5, 可以熟练阅读英文文档。</li>
-              <li>喜欢研究技术，喜欢研究新技术，喜欢研究开源项目。</li>
-              <li>熟练使用 ai 工具辅助编程</li>
-              <li>个人主页: <a href="https://zxy.zln2.fun" target="_blank" rel="noopener noreferrer">zxy.zln2.fun</a></li>
-              <li>github 主页: <a href="https://github.com/zxyfreediver" target="_blank" rel="noopener noreferrer">https://github.com/zxyfreediver</a></li>
-            </ul>
-          </div>
-        </section>
+          
       </main>
     </div>
   );
