@@ -125,7 +125,7 @@ export default function Resume() {
           <div className="bg-white shadow rounded-lg p-6">
             <ul className="list-disc list-inside text-gray-700">
               <li>Developed WeChat Mini Program &quot;Apnea Training&quot; using Taro + FastAPI + Supabase</li>
-              <li>Built AI-powered apnea training app with React Native, published on <a href="https://play.google.com/store/apps/details?id=com.zln2.apneaplan" target="_blank" rel="noopener noreferrer">Google Play</a></li>
+              <li>Built apnea training app with React Native published on google play and apple store, search 「Apnea Plan」</li>
               <li>Personal portfolio built with Next.js + Vercel + Cursor</li>
             </ul>
           </div>
@@ -146,7 +146,6 @@ export default function Resume() {
               <h3 className="font-semibold mb-2">Additional Skills</h3>
               <ul className="list-disc list-inside">
                 <li>DevOps (CI/CD/Docker/K8s)</li>
-                <li>Cloud Native (AWS/Alibaba Cloud/Tencent Cloud)</li>
                 <li>Fluent English (CET-6/IELTS 6.5)</li>
               </ul>
             </div>
@@ -157,9 +156,6 @@ export default function Resume() {
           <h2 className="text-2xl font-semibold text-gray-700 mb-4">Profile</h2>
           <div className="bg-white shadow rounded-lg p-6">
             <ul className="list-disc list-inside text-gray-700">
-              <li>English proficiency: CET-6, IELTS 6.5 (Technical document reading)</li>
-              <li>Passionate about exploring new technologies and open-source projects</li>
-              <li>Proficient in using AI tools for programming assistance</li>
               <li>Portfolio: <a href="https://zxy.zln2.fun" target="_blank" rel="noopener noreferrer">zxy.zln2.fun</a></li>
               <li>GitHub: <a href="https://github.com/zxyfreediver" target="_blank" rel="noopener noreferrer">github.com/zxyfreediver</a></li>
             </ul>
