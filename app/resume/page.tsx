@@ -141,7 +141,7 @@ export default function Resume() {
           <div className="bg-white shadow rounded-lg p-6">
             <ul className="list-disc list-inside text-gray-700">
               <li>使用 taro + python fastapi + supabse 开发微信小程序 &quot;闭气练习&quot; 供自由潜水员日常训练使用，可通过微信小程序搜索</li>
-              <li>使用 react native 开发闭气练习 app 可通过 googleplay 或者 applestore 搜索 Apnea Plan 试用
+              <li>使用 react native 开发闭气练习 app 可通过 googleplay 或者 applestore 搜索 Apnea Plan 试用</li>
               <li>使用 nextjs + vercel + cursor 部署自己的个人网站</li>
             </ul>
           </div>
