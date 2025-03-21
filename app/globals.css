@@ -1,6 +1,6 @@
-@import 'tailwindcss/base';
-@import 'tailwindcss/components';
-@import 'tailwindcss/utilities';
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
 
 /* 添加以下代码 */
 @supports not (backdrop-filter: none) {
@@ -56,4 +56,6 @@ body {
     margin: 2cm;
   }
 }
+
+/* 其他自定义样式可以放在这里 */
 
