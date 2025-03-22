@@ -53,8 +53,8 @@ BSc in Internet of Things Engineering
 - Developed real-time interactive features and mini-programs
 
 ### Tongfang Computer Co., Ltd.
-**Software Development Engineer**
-*May 2018 - July 2019*
+**Software Developer**  
+*May 2018 - Jul 2019*
 - Maintained the company's online education website
 
 ## Project Experience
